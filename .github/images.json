@@ -1,0 +1,17 @@
+[
+  {"vm": "evm",           "image": "ghcr.io/zooai/chains/evm",           "cgo": "1"},
+  {"vm": "dexvm",         "image": "ghcr.io/zooai/chains/dexvm",         "cgo": "0"},
+  {"vm": "aivm",          "image": "ghcr.io/zooai/chains/aivm",          "cgo": "0"},
+  {"vm": "bridgevm",      "image": "ghcr.io/zooai/chains/bridgevm",      "cgo": "0"},
+  {"vm": "graphvm",       "image": "ghcr.io/zooai/chains/graphvm",       "cgo": "0"},
+  {"vm": "identityvm",    "image": "ghcr.io/zooai/chains/identityvm",    "cgo": "0"},
+  {"vm": "keyvm",         "image": "ghcr.io/zooai/chains/keyvm",         "cgo": "0"},
+  {"vm": "oraclevm",      "image": "ghcr.io/zooai/chains/oraclevm",      "cgo": "0"},
+  {"vm": "quantumvm",     "image": "ghcr.io/zooai/chains/quantumvm",     "cgo": "0"},
+  {"vm": "relayvm",       "image": "ghcr.io/zooai/chains/relayvm",       "cgo": "0"},
+  {"vm": "servicenodevm", "image": "ghcr.io/zooai/chains/servicenodevm", "cgo": "0"},
+  {"vm": "teleportvm",    "image": "ghcr.io/zooai/chains/teleportvm",    "cgo": "0"},
+  {"vm": "thresholdvm",   "image": "ghcr.io/zooai/chains/thresholdvm",   "cgo": "0"},
+  {"vm": "zkvm",          "image": "ghcr.io/zooai/chains/zkvm",          "cgo": "0"},
+  {"vm": "zoo-evm",       "image": "ghcr.io/zooai/chains/zoo-evm",       "cgo": "1"}
+]
