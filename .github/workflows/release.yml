@@ -8,13 +8,9 @@ on:
     branches: [main]
   workflow_dispatch:
 
-permissions:
-  contents: read
-  packages: write
-
 jobs:
   plan:
-    runs-on: ubuntu-latest
+    runs-on: zoo-build-linux-amd64
     outputs:
       images: ${{ steps.load.outputs.images }}
     steps:
@@ -29,12 +25,14 @@ jobs:
       fail-fast: false
       matrix:
         image: ${{ fromJson(needs.plan.outputs.images) }}
-    uses: hanzoai/.github/.github/workflows/docker-build.yml@main
+    uses: zooai/.github/.github/workflows/docker-build.yml@main
     with:
       image: ${{ matrix.image.image }}
       dockerfile: Dockerfile.plugin
-      runner-amd64: zoo-amd64
-      runner-arm64: zoo-arm64
+      runner-amd64: zoo-build-linux-amd64
+      runner-arm64: zoo-build-linux-amd64
+      runner-deploy: zoo-build-linux-amd64
+      platforms: "linux/amd64"
       build-args: |
         VM=${{ matrix.image.vm }}
       pre-build-command: |
