@@ -1,6 +1,6 @@
 module github.com/zooai/chains/zoo-evm
 
-go 1.26.1
+go 1.26.4
 
 require (
 	github.com/luxfi/evm v0.8.49
