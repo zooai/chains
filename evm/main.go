@@ -36,9 +36,6 @@ import (
 	// ── AI ────────────────────────────────────────────────
 	_ "github.com/luxfi/precompile/ai" // 0x0300 AI mining / inference
 
-	// ── Consensus (Quasar) ───────────────────────────────
-	_ "github.com/luxfi/precompile/quasar" // 0x0300..20-24 BLS + Verkle + Corona + Hybrid verify
-
 	// ── Bridge ───────────────────────────────────────────
 	_ "github.com/luxfi/precompile/bridge" // 0x0440-0443 Gateway + Router + Verifier + Liquidity
 
@@ -49,9 +46,12 @@ import (
 	_ "github.com/luxfi/precompile/zk" // 0x0900 Groth16 + PLONK + fflonk + Halo2
 
 	// ── Encryption / Privacy ─────────────────────────────
-	_ "github.com/luxfi/precompile/ecies" // 0x9201 ECIES encrypt/decrypt
-	_ "github.com/luxfi/precompile/hpke"  // 0x9200 Hybrid Public Key Encryption
-	_ "github.com/luxfi/precompile/ring"  // 0x9202 Ring signatures
+	// NOTE: ecies/aes/chacha20 precompiles were deleted upstream (precompile
+	// >= v0.5.38): they require private/symmetric keys in calldata, which are
+	// irrecoverably exposed on-chain. Use hpke (public-key seal) + x25519
+	// (ephemeral DH) instead.
+	_ "github.com/luxfi/precompile/hpke" // 0x9200 Hybrid Public Key Encryption
+	_ "github.com/luxfi/precompile/ring" // 0x9202 Ring signatures
 
 	// ── DEX (LX Suite 0x9010-0x9080) ─────────────────────
 	_ "github.com/luxfi/precompile/dex" // Pool + Oracle + Router + Hooks + Flash + Book + Vault + Price + Lend + Repayer + Liquidator + Transmuter
