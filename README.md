@@ -1,3 +1,5 @@
+<p align="center"><img src=".github/hero.svg" alt="chains" width="880"></p>
+
 # Zoo Chains
 
 VM plugin binaries for the Zoo Network. Includes all standard Lux VMs plus Zoo-specific chains.
