@@ -1,2 +1,19 @@
 build/
+
+# each module is a main package, so `go build ./...` drops its binary in its own directory
+aivm/aivm
+bridgevm/bridgevm
+dexvm/dexvm
+evm/evm
+graphvm/graphvm
+identityvm/identityvm
+keyvm/keyvm
+oraclevm/oraclevm
+quantumvm/plugin
+quantumvm/quantumvm
+relayvm/relayvm
+servicenodevm/servicenodevm
+teleportvm/teleportvm
+thresholdvm/thresholdvm
+zkvm/zkvm
 zoo-evm/zoo-evm

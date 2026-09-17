@@ -1,6 +1,6 @@
 module github.com/luxfi/chains/evm
 
-go 1.26.4
+go 1.27.1
 
 require (
 	github.com/luxfi/evm v1.99.21
@@ -100,7 +100,7 @@ require (
 	github.com/luxfi/formatting v1.0.1 // indirect
 	github.com/luxfi/geth v1.17.11 // indirect
 	github.com/luxfi/go-bip39 v1.1.2 // indirect
-	github.com/luxfi/gpu v1.0.1 // indirect
+	github.com/luxfi/gpu v1.1.2 // indirect
 	github.com/luxfi/ids v1.2.15 // indirect
 	github.com/luxfi/lattice/v7 v7.1.4 // indirect
 	github.com/luxfi/math v1.4.1 // indirect
