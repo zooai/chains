@@ -2,6 +2,8 @@
 
 # Zoo Chains
 
+[![Open in Hanzo](https://hanzo.app/badges/open-in-hanzo.svg)](https://hanzo.app/dev/open?repo=github.com/zooai/chains&ref=main&action=open) [![Edit with Hanzo](https://hanzo.app/badges/edit-with-hanzo.svg)](https://hanzo.app/dev/open?repo=github.com/zooai/chains&ref=main&action=edit)
+
 VM plugin binaries for the Zoo Network. Includes all standard Lux VMs plus Zoo-specific chains.
 
 ## Standard VMs (from Lux)
